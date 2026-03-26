@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; }
+
+body { font-family: system-ui, sans-serif; }
+
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: #0a0a0f; }
+::-webkit-scrollbar-thumb { background: #e8c73a; border-radius: 2px; }
+
+.card {
+  @apply bg-[#111118] border border-white/10 rounded-xl p-4;
+}
+
+.pill {
+  @apply text-[10px] font-semibold px-2 py-0.5 rounded-full border;
+}
+
+.pill-deal {
+  @apply bg-green-500/10 text-green-400 border-green-400/30;
+}
+
+.pill-nodeal {
+  @apply bg-red-500/10 text-red-400 border-red-400/30;
+}
